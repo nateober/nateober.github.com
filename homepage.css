@@ -1,3 +1,7 @@
+html, body{
+	height: 100%;
+}
+
 body, .title, .container, .site-title, .divider-vertical, .header, .clear, calendar, temperature{
 	margin:0;
 	padding:0;
@@ -7,7 +11,12 @@ body, .title, .container, .site-title, .divider-vertical, .header, .clear, calen
 body{
 	background-color: #333;
 }
-            
+   
+:link { color:#666; text-decoration:none; } 
+:visited { color:#666; text-decoration:none; } 
+:link:hover { color:#666; text-decoration:none; } 
+:link:active { color:#666; text-decoration:none; } 
+         
 .title{
     padding:15px 1px 1px 1px;
     font-weight:bold;
@@ -20,9 +29,21 @@ body{
 	border-right: 1px dashed #666;
 	border-left: 1px dashed #666;
 	width:750px;
-	margin-left: auto ;
-  	margin-right: auto ;
+	margin: 0 auto -10px;
+  	min-height: 100%;
+	height: auto !important;
+	height: 100%;
 }
+
+#push{
+	width: 740px;
+	height:10px;
+	margin: auto;
+	color: #666;
+	text-align:center;
+}
+
+
       
 #ident{
     float:left;
@@ -46,21 +67,34 @@ body{
     border-bottom: 1px solid #E5E5E5;
 }
 
-.social-links{
-    float: left;
-    margin:4px 0 0 0;
-    padding: 0;
-    list-style: none;
-    border: 0;
+.social-links ul{    
+    position: fixed;
+	top: 60px;
+	right: 0px;
+	width: 40px;
+	z-index: 3000;
+	-webkit-transition: top 1s ease;
+	-moz-transition: top 1s ease;
+	-ms-transition: top 1s ease;
+	transition: top 1s ease;
+	border: 1px solid #999;
+	border-right: 0px;
+	padding:10px 10px;
+	
+	margin:0;
+	border-bottom-left-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
 }
 
-.social-links li{ 
+.social-links ul li{ 
 	display: inline;
 }
       
 .social-links a{ 
     text-decoration:none;  
-    padding:10px 10px 0px 0px;
+    margin: 10px auto;
 }
       
 .header{
@@ -113,9 +147,7 @@ body{
 }
 
 #innerpage{
-	margin-top: 10px;
-    margin-left: 10px;
-    margin-right:10px;
+	margin: 10px 10px auto;
     padding: 0 30px 10px 30px;
     float:left;
     width:400px;
