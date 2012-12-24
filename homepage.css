@@ -17,7 +17,9 @@ body{
 	background-image: url('media/argyle.png');
 	background-repeat: repeat-xy;
 	background-color: #F3F3F3;
-	width:740px;
+	border-right: 1px dashed #666;
+	border-left: 1px dashed #666;
+	width:750px;
 	margin-left: auto ;
   	margin-right: auto ;
 }
@@ -70,7 +72,7 @@ body{
     background-repeat: repeat-x;
     border-bottom: 1px solid #E5E5E5;
     height: 40px;
-    width: 740px;
+    width: 750px;
 }
       
 #ftw{
@@ -82,10 +84,11 @@ body{
 
 #calendar{
 	background-color:#333;
-	padding: 8px 0px 1px 30px;
+	padding: 4px 0px 4px 30px;
 	color:#666;
 	font-size:10px;
-	width: 710px;
+	width: 720px;
+	display:none;
 }
 
 #temperature{
@@ -103,14 +106,16 @@ body{
     border-bottom-right-radius: 10px;
     -moz-border-bottom-right-radius: 10px;
     float:left;
-    width:770px;
+    width:780px;
+    margin-bottom:10px;
+    margin-left:5px;
 }
 
 #innerpage{
 	margin-top: 10px;
     margin-left: 10px;
     margin-right:10px;
-    padding:0 30px 10px 30px;
+    padding: 0 30px 10px 30px;
     float:left;
     width:400px;
     border: 1px solid #000;
