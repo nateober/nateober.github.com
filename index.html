@@ -1,29 +1,70 @@
 <!doctype html>
- 
 <HTML lang="en">
-<meta charset="utf-8" />
-
 <HEAD><TITLE>Nate Ober Project Page</TITLE>
-	<link href="homepage.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="homepage.css" media="screen" rel="stylesheet" type="text/css">
+  <script>
+  
+  	function daysInMonth(m,y) {
+    	return new Date(m, y, 0).getDate();
+	}
+	
+  	function createCalendar(){
+  	var today = new Date();
+  	var month = today.getMonth();
+  	var day = today.getDate();
+  	var year = today.getFullYear();
+  	var weekday = today.getDay();
+  	
+  
+  	
+  	var mn=new Array();
+  	mn[0]="January"; mn[1]="February"; mn[2]="March"; mn[3]="April"; 
+  	mn[4]="May"; mn[5]="June"; mn[6]="July"; mn[7]="August"; 
+  	mn[8]="September"; mn[9]="October"; mn[10]="November"; mn[11]="December";
+  	
+  	var dow=new Array();
+  	dow[0]="Sun";dow[1]="Mon";dow[2]="Tues";dow[3]="Wednes";
+  	dow[4]="Thurs";dow[5]="Fri";dow[6]="Satur";
+  	
+  	var calstring = '&lt;&nbsp;<span class="now">' + mn[month] + "</span>&nbsp;&nbsp;1"; 
+  	
+  	for(i=2; i<=daysInMonth(month, year); i++){
+  		if (i==today.getDate()){
+  			calstring += ' &middot; <span class="now">[ ' + i + " ]</span>";
+  		}
+  		else{
+  			calstring += " &middot; " + i;
+  			}
+  	}
+  	calstring += '&nbsp; &nbsp;<span class="now">' + dow[weekday] + "day</span>&nbsp;&gt;";
+  	document.getElementById("calendar").innerHTML=calstring; 
+  } 
+  
+  </script>
 </HEAD>
-<BODY>
-<div id="container">
-	<div id="head">
+<BODY onload="createCalendar()">
+<div id="container" class="group">
+	<div class="header">
 		<div id="ident"><H2 class="site-title">nateober</H2></div>
 		<div class="divider-vertical"></div>
 		<div id="ftw"><p>//Technology in Education FTW</p></div>
 	</div>
+	<div id="calendar" class="clear"></div>
 	<div id="page">
+		
 		<div id="innerpage">
+		  <div class="biotext">
 			<p class="title">about me.</p>
-			<p>I'm Nate Ober. I am a product manager, tinkerer and system administrator.</p>
-			<p>Working for the Utah State Office of Education as an Education Specialist, I am the project manager and system administrator for UTIPS Core and last generation UTIPS, both online formative assessment systems. Over the last year, these two services served up more than 6 million tests and were used by teachers to give them immediate feedback regarding their students&#8217; abilities. </p>
+			<p>I'm Nate Ober. By day I am a product and project manager, by night a technology tinkerer and task automator. I enjoy making tools that make life easier and aim to make products that get out of the way and allow people to do the things that they are good at.</p>
+			<p>Working for the Utah State Office of Education, I am the project manager and system administrator for UTIPS Core and last generation UTIPS, both online formative assessment systems. Over the last year, these two services served up more than 6 million tests and were used by teachers to give them immediate feedback regarding their students&#8217; abilities.</p>
 			<p>I am also the technology project manager for summative assessments in Utah, responsible for developing technical requirements, troubleshooting large scale technology problems and acting as the primary technical contact for all CRT computer-based testing in Utah. In this regard, I have experience writing RFPs, participating in regular stand-ups with developers, and coordinating action between districts, contractors and the USOE.</p>
-			<p>I started a web development company in the 90s and have a history developing applications in PHP, .Net and Perl.  I have more than 10 years experience working with web based SaaS applications at every level from hardware and networking to system administration, interface design and programming.</p>
+			<p>I have a history developing applications in PHP, C# and Perl. I have more than 10 years experience working with web based SaaS applications at every level from hardware and networking to system administration, interface design and programming.</p>
 			<p>I am passionate about technology in education and the future of technology in our schools. </p>
-		<div><ul id="social-links"><li><a href="http://nateober.com/linkedin"> <img src="media/linkedin.png"></img></a></li><li><a href="http://nateober.com/twitter"><img src="media/twitter.png"></img></a></li><li><a href="http://nateober.com/googleplus"><img src="media/google.png"></img></a></li></ul></div>
+		  </div>
+		  
+		<div><ul class="social-links"><li><a href="http://nateober.com/linkedin"><img src="media/linkedin.png"></a></li><li><a href="http://nateober.com/twitter"><img src="media/twitter.png"></a></li><li><a href="http://nateober.com/googleplus"><img src="media/google.png"></a></li></ul></div>
 		</div>
-		<div id="me_img"><img src="homepage.jpg"></div>
+		<div><img class="pic" src="homepage.jpg"></div>
 		<div class="clear"></div>
 	</div>
 </div>
