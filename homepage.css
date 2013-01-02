@@ -2,7 +2,7 @@ html, body{
 	height: 100%;
 }
 
-body, .title, .container, .site-title, .divider-vertical, .header, .clear, calendar, temperature{
+html, body, .title, #maincontainer, .site-title, .divider-vertical, .header, .clear, calendar, temperature{
 	margin:0;
 	padding:0;
 	border:0;
@@ -13,16 +13,41 @@ body{
 	min-width: 1000px;
 }
    
-:link { color:#666; text-decoration:none; } 
-:visited { color:#666; text-decoration:none; } 
-:link:hover { color:#666; text-decoration:none; } 
-:link:active { color:#666; text-decoration:none; } 
+a { color:#666; 
+	text-decoration:none; 
+   -webkit-transition:color 500ms ease;
+   -moz-transition:color 500ms ease;
+   -o-transition:color 500ms ease;
+   transition:color 500ms ease;
+} 
+a:visited { color:#666; } 
+a:hover { color:#00F; } 
+a:active { color:#FFF; } 
+
+
          
 .title{
     padding:15px 1px 1px 1px;
     font-weight:bold;
 }
-      
+
+.inline{
+	display: inline;
+	float: left;
+	padding: 0px 20px 0 30px;
+	margin-left: -15px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.pagelinks{
+	padding:0px;
+	float:left;
+	margin-bottom:0px;
+}
+
 #maincontainer{
 		width:750px;
 		margin: 0 auto;
@@ -46,10 +71,10 @@ body{
     width: 750px;
 }
 
-#aboutcontainer{
+#aboutme{
 	float:left;
 	background-image: url('media/argyle.png');
-	background-repeat: repeat-xy;
+	background-repeat: repeat;
 	background-color: #F3F3F3;
 	width:750px;
 	min-height: 100%;
@@ -57,7 +82,7 @@ body{
 	height: 100%;
 }
 
-#projectcontainer{
+#projects{
 	float:left;
 	background-repeat: repeat-xy;
 	background-position:center;
@@ -86,7 +111,7 @@ body{
 	text-shadow: 0 1px 0 #222;
 	width:750px;
 	height:20px;
-	margin: 20px auto;
+	/* margin: 20px auto; */
 	text-align: center;
 	color: #FFF;
 }
@@ -160,6 +185,7 @@ body{
 #weather{
 	float:left;
 }
+
 #temperature{
 	background-color:#333;
 	float:left;
