@@ -9,7 +9,16 @@ html, body, .title, #maincontainer, .site-title, .divider-vertical, .header, .cl
 }
 
 body{
-	background-color: #333;
+	background: #7d7e7d; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+background-repeat:none;
 	min-width: 1000px;
 }
    
@@ -56,6 +65,7 @@ ul{
 		height: 100%;
 		border-right: 1px dashed #666;
 		border-left: 1px dashed #666;
+		background:#333;
 }
 
 .header{
