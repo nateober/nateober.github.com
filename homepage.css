@@ -19,7 +19,7 @@ background: radial-gradient(ellipse at center,  #7d7e7d 0%,#0e0e0e 100%); /* W3C
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
 background-repeat:none;
-	min-width: 1000px;
+	min-width: 800;
 }
    
 a { color:#666; 
@@ -29,6 +29,7 @@ a { color:#666;
    -o-transition:color 500ms ease;
    transition:color 500ms ease;
 } 
+
 a:visited { color:#666; } 
 a:hover { color:#00F; } 
 a:active { color:#FFF; } 
@@ -82,6 +83,7 @@ ul{
 }
 
 #aboutme{
+	
 	float:left;
 	background-image: url('media/argyle.png');
 	background-repeat: repeat;
@@ -93,12 +95,14 @@ ul{
 }
 
 #projects{
+	
 	float:left;
 	background-repeat: repeat-xy;
 	background-position:center;
 	
 	background-image: url('media/floral.png');
 	width:750px;
+	max-height:650px;
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
@@ -113,9 +117,9 @@ ul{
 	background: linear-gradient(to bottom, rgba(51,51,51,0) 0%,rgba(51,51,51,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 	width:750px;
-	min-height: 800px;
+	min-height: 750px;
 	height: auto !important;
-	height:800px;
+	height:750px;
 	clear:both;
 }
 
@@ -152,13 +156,39 @@ ul{
 }
 
 
-#social-div{
-	z-index:-3;
-	position: fixed; 
-	margin:80px 0px 0px -52px;
+#social-hor{
+	display:none;
+	margin:10px 21px 0px 0px;
+	height:50px;
+	width:245px;
+	float:left;
+	border: 1px solid #555;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
 }
 
-#social-div ul{
+#social-hor ul{
+	float:left;
+	list-style-type: none;
+	display:inline;
+	margin:0;
+	padding:0 10px 0 5px;
+    }
+    
+#social-hor ul li {
+	margin:8px 0 0 2px;
+	float:left;
+    display:inline;    
+}
+
+#social-vert{
+	display:none;
+	position: fixed; 
+	margin:80px 0px 0px -52px;
+	width:50px
+}
+
+#social-vert ul{
 	list-style-type: none;
 	border: 1px solid #999;
 	border-right: 0px;
@@ -169,13 +199,48 @@ ul{
     border-top-left-radius: 10px;
     -moz-border-top-left-radius: 10px;
     }
+    
+#follow-words{
+	color: #AAA;
+	height:40px;
+	width:60px;
+	overflow: hidden;
+} 
       
-#social-div a{ 
-    text-decoration:none;  
-    margin: 20px auto;
-}
-      
+#follow-li{
+	height:40px;
+	width:40px;
+	overflow: hidden;
+	background: url(media/linkedin.png) no-repeat;
+}    
 
+#follow-tw{
+	height:40px;
+	width:40px;
+	overflow: hidden;
+	background: url(media/twitter.png) no-repeat;
+}    
+
+#follow-gp{
+	height:40px;
+	width:40px;
+	overflow: hidden;
+	background: url(media/google.png) no-repeat;
+}    
+
+#follow-gh{
+	height:40px;
+	width:40px;
+	overflow: hidden;
+	background: url(media/github.png) no-repeat;
+}    
+
+
+#social-vert ul li a{ 
+	display: block;
+	height:40px;
+	width:40px;
+}
       
 #ftw{
     float:right;

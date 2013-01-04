@@ -1,4 +1,4 @@
-function daysInMonth(m,y) {
+	function daysInMonth(m,y) {
     	return new Date(m, y, 0).getDate();
 	}
 	
@@ -34,3 +34,21 @@ function daysInMonth(m,y) {
   	document.getElementById("calendar").innerHTML=calstring; 
   	document.getElementById("calendar").style.display="block";
   } 
+  
+  function social(){
+  	//console.log(window.innerWidth + ", " + document.width);
+    if(window.innerWidth < 850){
+    	document.getElementById("social-vert").style.display="none";
+    	document.getElementById("social-hor").style.display="block";
+	}
+	if(window.innerWidth > 850){
+    	document.getElementById("social-vert").style.display="block"; 
+    	document.getElementById("social-hor").style.display="none";
+	}
+}
+
+	function init(){
+		createCalendar();
+		social();
+		window.onresize = social;
+	}
