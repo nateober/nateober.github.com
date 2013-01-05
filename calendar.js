@@ -32,7 +32,6 @@
   	}
   	calstring += '&nbsp; &nbsp;<span class="now">' + dow[weekday] + "day</span>&nbsp;&gt;";
   	document.getElementById("calendar").innerHTML=calstring; 
-  	document.getElementById("calendar").style.display="block";
   } 
   
   function social(){
@@ -40,11 +39,26 @@
     if(window.innerWidth < 850){
     	document.getElementById("social-vert").style.display="none";
     	document.getElementById("social-hor").style.display="block";
+    	document.getElementById("calendar").style.display="none";
+    	document.getElementById("smallpic").style.display="block";
+    	document.getElementById("bigpic").style.display="none";
+    	
+    	var size = document.getElementById("innerpage").offsetWidth;
+    	size = size - 45;
+    	document.getElementById("interests").style.width=size + "px";
 	}
+	
 	if(window.innerWidth > 850){
     	document.getElementById("social-vert").style.display="block"; 
     	document.getElementById("social-hor").style.display="none";
+    	document.getElementById("calendar").style.display="block";
+    	document.getElementById("smallpic").style.display="none";
+    	document.getElementById("bigpic").style.display="block";
+    	var size = document.getElementById("bigpic").width;
+    	size = size - 42;
+    	document.getElementById("interests").style.width= size + "px";
 	}
+	
 }
 
 	function init(){

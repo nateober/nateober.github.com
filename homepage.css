@@ -1,3 +1,5 @@
+
+
 html, body{
 	height: 100%;
 }
@@ -10,19 +12,18 @@ html, body, .title, #maincontainer, .site-title, .divider-vertical, .header, .cl
 
 body{
 	background: #7d7e7d; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
-background: -webkit-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
-background: -o-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 12+ */
-background: -ms-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
-background: radial-gradient(ellipse at center,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-background-repeat:none;
-	min-width: 800;
+	background: -moz-radial-gradient(center, ellipse cover,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-repeat:none;
 }
    
-a { color:#666; 
+a { 
+	color:#666; 
 	text-decoration:none; 
    -webkit-transition:color 500ms ease;
    -moz-transition:color 500ms ease;
@@ -59,14 +60,12 @@ ul{
 }
 
 #maincontainer{
-		width:750px;
+		max-width:800px;
+		width:80%;
 		margin: 0 auto;
 		min-height: 100%;
 		height: auto !important;
 		height: 100%;
-		border-right: 1px dashed #666;
-		border-left: 1px dashed #666;
-		background:#333;
 }
 
 .header{
@@ -76,32 +75,30 @@ ul{
     background-image: -webkit-linear-gradient(#F9F9F9, #F3F3F3);
     background-image: linear-gradient(#F9F9F9, #F3F3F3);
     background-repeat: repeat-x;
-    /*border-bottom: 1px solid #E5E5E5;*/
-    border-bottom: 1px solid #999;
+    border-bottom: 1px solid #E5E5E5;
     height: 40px;
-    width: 750px;
 }
 
 #aboutme{
-	
 	float:left;
+	border-right: 1px dashed #666;
+	border-left: 1px dashed #666;
 	background-image: url('media/argyle.png');
 	background-repeat: repeat;
 	background-color: #F3F3F3;
-	width:750px;
+	/*width:750px;*/
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
+	margin:0 auto;
 }
 
 #projects{
-	
 	float:left;
 	background-repeat: repeat-xy;
 	background-position:center;
-	
 	background-image: url('media/floral.png');
-	width:750px;
+	/*width:750px;*/
 	max-height:650px;
 	min-height: 100%;
 	height: auto !important;
@@ -116,16 +113,13 @@ ul{
 	background: -ms-linear-gradient(top, rgba(51,51,51,0) 0%,rgba(51,51,51,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom, rgba(51,51,51,0) 0%,rgba(51,51,51,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
-	width:750px;
-	min-height: 750px;
-	height: auto !important;
-	height:750px;
 	clear:both;
+	float:left;
 }
 
 .seperator{
 	text-shadow: 0 1px 0 #222;
-	width:750px;
+	/*width:750px;*/
 	height:20px;
 	/* margin: 20px auto; */
 	text-align: center;
@@ -158,13 +152,14 @@ ul{
 
 #social-hor{
 	display:none;
-	margin:10px 21px 0px 0px;
+	margin:10px 10px -2px 10px;
 	height:50px;
 	width:245px;
 	float:left;
 	border: 1px solid #555;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
+	background-color:#333;
 }
 
 #social-hor ul{
@@ -250,12 +245,13 @@ ul{
 }
 
 #calendar{
+	text-align:center;
 	background-color:#333;
-	padding: 4px 4px 4px 8px;
-	margin:auto;
+	padding: 4px auto;
+	margin: 0 auto;
 	color:#666;
 	font-size:8pt;
-	width: 738px;
+	width: 100%;
 	display:none;
 }
 
@@ -274,12 +270,12 @@ ul{
       
 #page1{
     float:left;
-    width:780px;
+    /*width:780px;*/
 }
 
 #page2{
     float:left;
-    width:750px;
+    /*width:750px;*/
 }
 
 #innerpage{
@@ -288,7 +284,7 @@ ul{
 	margin: 10px 10px auto;
     padding: 0 30px 10px 30px;
     float:left;
-    width:400px;
+    max-width:330px;
     border: 1px solid #999;
     background-color: #FFF;
 }
@@ -300,13 +296,13 @@ ul{
 	margin: 10px 10px auto;
     padding: 0 30px 10px 30px;
     float:left;
-    width:640px;
+    /*width:640px;*/
     border: 1px solid #999;
     background-color: #FFF;
 }
       
-.pic{
-    margin: 10px 0 0 0;
+#bigpic{
+    margin: 10px 5px;
     float:left;
 	-moz-box-shadow: 2px 2px 3px #333;
 	-webkit-box-shadow: 2px 2px 3px #333;
@@ -314,15 +310,26 @@ ul{
 	border: 1px solid #000;
 }
 
-#roles{
+#smallpic{
+	clear:both;
+	margin:10px 10px -2px 10px;
+	width:240px;
+	float:left;
+	height:130px;
+	background: url('homepage.jpg') no-repeat;
+	background-position: 0 -20px; 
+	 border: 1px solid #000;
+	 display:none;
+}
+
+#interests{
 	border-radius: 5px;
     -moz-border-radius: 5px;
-	margin: 10px 20px 0 0;
-    padding-left: 20px;
+	margin: 10px 10px;
+    padding: 0 20px;
     border: 1px solid #000;
     background-color: #FFF;
-    float:right;
-    width: 225px;
+    float:left;
 }
 
 #spacer{
@@ -332,7 +339,6 @@ ul{
     padding-left: 20px;
     background-color: #FFF;
     float:right;
-    width: 225px;
     height:25px;
     background-image: url('media/argyle.png');
 }
