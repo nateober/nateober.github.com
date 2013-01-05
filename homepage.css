@@ -2,10 +2,9 @@ html, body{
 	height: 100%;
 }
 
-html, body, .title, #maincontainer, .site-title, .divider-vertical, .header, .clear, calendar, temperature{
+* {	
 	margin:0;
 	padding:0;
-	border:0;
 }
 
 body{
@@ -51,7 +50,7 @@ ul{
     -moz-border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     -moz-border-top-left-radius: 10px;
-    }
+}
     
 #social-vert ul li, #social-hor ul li{
 	height:40px;
@@ -70,7 +69,7 @@ ul{
 	height: auto !important;
 	height: 100%;
 	width:100%;
-	margin: auto;
+	margin:0 auto;
 }
 
 .title{
@@ -88,7 +87,7 @@ ul{
     border-bottom: 1px solid #E5E5E5;
     height: 40px;
     width:100%;
-    margin: auto;
+   	margin:0 auto;
 }
 
 #gradientShader{
@@ -102,7 +101,7 @@ ul{
 	clear:both;
 	float:left;
 	width:100%;
-    margin: auto;
+    margin:0 auto;
 }
       
 #ident{
@@ -178,7 +177,7 @@ ul{
     
 #follow-words{
 	color: #AAA;
-	padding:0 14px 0 4px;
+	padding:0 14px 20px 4px;
 	
 } 
       
@@ -232,15 +231,6 @@ ul{
 	display:none;
 }
 
-#weather{
-	float:left;
-}
-
-#temperature{
-	background-color:#333;
-	float:left;
-}
-
 .now{
 	color:red;
 }
@@ -270,20 +260,12 @@ ul{
 	border-radius: 5px;
     -moz-border-radius: 5px;
 	margin: 10px 10px;
-    padding: 0 20px;
+    padding: 20px; 20px;
     border: 1px solid #000;
     background-color: #FFF;
     float:left;
 }
 	
-#push{
-	width: 740px;
-	height:10px;
-	margin: auto;
-	color: #666;
-	text-align:center;
-}
-      
 .clear{
     clear: both;
 }
