@@ -66,7 +66,6 @@ ul{
 
 #aboutme{
 	float: left;
-	
 	background-image: url('media/argyle.png');
 	background-repeat: repeat;
 	background-color: #F3F3F3;
@@ -297,14 +296,22 @@ ul{
     	max-width:1000px;
     }
     
-    	#ftw{
+    #ftw{
 		display:none;
+	}
+	
+	#maincontainer{
+		width:100%;
 	}
 }
 
 @media screen and (min-width: 500px) {
 	#ftw{
 		display:block;
+	}
+	
+	#maincontainer{
+		width:80%;
 	}
 }
 
