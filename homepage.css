@@ -17,12 +17,12 @@ body{
 	background: -ms-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	background-attachment: fixed;
+	background-attachment: fixed !important;
 	background-repeat:no-repeat;
 	background-position: 0 0;
-	background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
+	background-size: auto !important;
+	-moz-background-size: auto;
+	-webkit-background-size: auto !important;
 	
 }
 
