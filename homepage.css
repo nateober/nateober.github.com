@@ -24,17 +24,19 @@ ul{
 }
       
 #maincontainer{
-		max-width:750px;
+		border-right: 1px dashed #666;
+		border-left: 1px dashed #666;
+		max-width:715px;
 		width:80%;
 		margin: auto;
 		min-height: 100%;
 		height: auto !important;
 		height: 100%;
+		background:#333;
 }
 
 #social-vert{
 	background-color:#333;
-	display:none;
 	position: fixed; 
 	margin:80px 0px 0px -52px;
 	width:50px
@@ -64,8 +66,7 @@ ul{
 
 #aboutme{
 	float: left;
-	border-right: 1px dashed #666;
-	border-left: 1px dashed #666;
+	
 	background-image: url('media/argyle.png');
 	background-repeat: repeat;
 	background-color: #F3F3F3;
@@ -150,7 +151,6 @@ ul{
 }
 
 #social-hor{
-	display:none;
 	margin:0 auto;
 	height:50px;
 	width:245px;
@@ -231,7 +231,6 @@ ul{
 	color:#666;
 	font-size:8pt;
 	width: 100%;
-	display:none;
 }
 
 .now{
@@ -256,7 +255,6 @@ ul{
 	background: url('homepage.jpg') no-repeat;
 	background-position: 0 -20px; 
 	 border: 1px solid #000;
-	 display:none;
 }
 
 #interests{
@@ -278,3 +276,55 @@ ul{
   display: table;
   clear: both;
 }
+
+@media screen and (min-width: 320px) 
+{
+	.lt8{
+		display: block;
+	}
+	
+	.gt8{
+		display: none;
+	}
+	
+	#interests{
+		width: 97%;
+		padding: 5px 0px 0px 10px;
+		margin:0px auto;
+	}
+    	
+    #biotext{
+    	max-width:1000px;
+    }
+    
+    	#ftw{
+		display:none;
+	}
+}
+
+@media screen and (min-width: 500px) {
+	#ftw{
+		display:block;
+	}
+}
+
+@media screen and (min-width: 900px) {
+  .gt8{
+		display: block;
+	}
+	
+	.lt8{
+		display: none;
+	}
+	
+	#interests{
+		width: 200px;
+		padding: 0 20px;
+		margin-left:8px;
+	}
+		
+    #biotext{
+    	max-width:400px;
+    }
+    
+}	

@@ -31,38 +31,10 @@
   			}
   	}
   	calstring += '&nbsp; &nbsp;<span class="now">' + dow[weekday] + "day</span>&nbsp;&gt;";
-  	document.getElementById("calendar").innerHTML=calstring; 
+  	$("#calendar").html(calstring); 
   } 
   
-  function social(){
-  	//console.log(window.innerWidth + ", " + document.width);
-    if(window.innerWidth < 950){
-    	
-    	$(".lt8").css("display", "block"); 
-    	$(".gt8").css("display", "none"); 
-    	
-    	var size = $("#biotext").width();
-    	console.log(size);
-    	size = size-30;
-    	$("#interests").css({'width' : "97%", 'padding' : "5px 0px 0px 10px", 'margin':'0px auto'});
-    	$("#biotext").css("maxWidth", "1000px");
-	}
-	
-	if(window.innerWidth > 950){
-    	$(".lt8").css("display", "none"); 
-    	$(".gt8").css("display", "block"); 
-    	var size = $("#bigpic").width();
-    	console.log(size);
-    	size = size - 50;
-    	$("#interests").css({'width' : "200px", 'padding' : "0 20px", 'margin-left' : "8px" });
-    	$("#biotext").css("maxWidth", "430px");
-	}
-	
-}
-
 	$(document).ready(function() {
 		createCalendar();
-		social();
-		$(window).resize(social);
-	});
+});
 
