@@ -17,7 +17,7 @@ body{
 	background: -ms-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	background-repeat:no-repeat;
+	background-repeat:repeat;
 	background-position: 0 0;
 	
 }
@@ -312,6 +312,7 @@ ul{
 @media screen and (min-width: 900px) {
 body{
 		background-attachment: fixed;
+		background-repeat:no-repeat;
 		width:auto;
 		margin:0 auto;
 	}
