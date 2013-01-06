@@ -20,6 +20,9 @@ body{
 	background-attachment: fixed;
 	background-repeat:no-repeat;
 	background-position: 0 0;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
 	
 }
 
