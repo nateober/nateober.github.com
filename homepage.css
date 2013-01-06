@@ -24,7 +24,7 @@ ul{
 }
       
 #maincontainer{
-		max-width:800px;
+		max-width:750px;
 		width:80%;
 		margin: auto;
 		min-height: 100%;
@@ -51,6 +51,10 @@ ul{
     border-top-left-radius: 10px;
     -moz-border-top-left-radius: 10px;
 }
+
+#social-vert ul #follow-words {
+	margin-left:-5px;
+}
     
 #social-vert ul li, #social-hor ul li{
 	height:40px;
@@ -68,8 +72,15 @@ ul{
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	width:100%;
-	margin:0 auto;
+	width: 100%;
+}
+
+#centercontainer{
+	clear:both;
+	width:95%;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .title{
@@ -101,7 +112,6 @@ ul{
 	clear:both;
 	float:left;
 	width:100%;
-    margin:0 auto;
 }
       
 #ident{
@@ -121,34 +131,27 @@ ul{
     float: left;
 }
 
-#innerpage{
+#biotext{
+	clear:both;
 	border-radius: 5px;
     -moz-border-radius: 5px;
-	margin: 10px 10px auto;
-    padding: 0 30px 10px 30px;
+	margin: 10px auto;
+    padding: 0 10px;
     float:left;
-    max-width:330px;
+    max-width:430px;
     border: 1px solid #999;
     background-color: #FFF;
 }
 
-#biotext{
-	float:left;
-    padding-bottom:8px;
-    border-bottom: 1px solid #E5E5E5;
-    margin:auto;
-}
-
 #smalltop{
-	width:100%;
-	margin:auto;
-	float:left;
+	width:260px;
+	margin:0 auto;
 	clear:both;
 }
 
 #social-hor{
 	display:none;
-	margin:10px 10% -2px 13%;
+	margin:0 auto;
 	height:50px;
 	width:245px;
 	float:left;
@@ -176,9 +179,9 @@ ul{
 }
     
 #follow-words{
+	margin-top:4px !important;
 	color: #AAA;
-	padding:0 14px 20px 4px;
-	
+	padding:0 16px 20px 4px;
 } 
       
 #follow-li{
@@ -246,7 +249,7 @@ ul{
 
 #smallpic{
 	clear:both;
-	margin:10px 0 -2px 13%;
+	margin:10px auto;
 	width:240px;
 	float:left;
 	height:130px;
@@ -257,13 +260,13 @@ ul{
 }
 
 #interests{
+	margin:10px auto;
 	border-radius: 5px;
     -moz-border-radius: 5px;
-	margin: 10px 10px;
-    padding: 20px; 20px;
-    border: 1px solid #000;
+    border: 1px solid #999;
     background-color: #FFF;
     float:left;
+    padding: 0 10px;
 }
 	
 .clear{

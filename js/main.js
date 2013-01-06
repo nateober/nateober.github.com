@@ -36,27 +36,26 @@
   
   function social(){
   	//console.log(window.innerWidth + ", " + document.width);
-    if(window.innerWidth < 850){
-    	document.getElementById("social-vert").style.display="none";
-    	document.getElementById("social-hor").style.display="block";
-    	document.getElementById("calendar").style.display="none";
-    	document.getElementById("smallpic").style.display="block";
-    	document.getElementById("bigpic").style.display="none";
+    if(window.innerWidth < 950){
     	
-    	var size = document.getElementById("innerpage").offsetWidth;
-    	size = size - 45;
-    	document.getElementById("interests").style.width=size + "px";
+    	$(".lt8").css("display", "block"); 
+    	$(".gt8").css("display", "none"); 
+    	
+    	var size = $("#biotext").width();
+    	console.log(size);
+    	size = size-30;
+    	$("#interests").css({'width' : "97%", 'padding' : "5px 0px 0px 10px", 'margin':'0px auto'});
+    	$("#biotext").css("maxWidth", "1000px");
 	}
 	
-	if(window.innerWidth > 850){
-    	document.getElementById("social-vert").style.display="block"; 
-    	document.getElementById("social-hor").style.display="none";
-    	document.getElementById("calendar").style.display="block";
-    	document.getElementById("smallpic").style.display="none";
-    	document.getElementById("bigpic").style.display="block";
-    	var size = document.getElementById("bigpic").width;
-    	size = size - 42;
-    	document.getElementById("interests").style.width= size + "px";
+	if(window.innerWidth > 950){
+    	$(".lt8").css("display", "none"); 
+    	$(".gt8").css("display", "block"); 
+    	var size = $("#bigpic").width();
+    	console.log(size);
+    	size = size - 50;
+    	$("#interests").css({'width' : "200px", 'padding' : "0 20px", 'margin-left' : "8px" });
+    	$("#biotext").css("maxWidth", "430px");
 	}
 	
 }
@@ -64,6 +63,6 @@
 	$(document).ready(function() {
 		createCalendar();
 		social();
-		window.onresize = social;
+		$(window).resize(social);
 	});
 
