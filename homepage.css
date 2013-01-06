@@ -309,7 +309,7 @@ ul{
 	
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) and (orientation:portrait){
 body{
 		background-attachment: fixed;
 		background-repeat:no-repeat;
@@ -335,3 +335,4 @@ body{
     }
     
 }	
+
