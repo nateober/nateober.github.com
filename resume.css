@@ -1,7 +1,15 @@
+.panel-body{
+ clear:both;
+}
+.entity-title{
+	float:left;
+}
+
 .entity-date{
 	clear:left;
 	float:left;
 }
+
 .jumbotron{
 	position:relative;
 }
