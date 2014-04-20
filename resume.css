@@ -1,4 +1,7 @@
-
+.entity-date{
+	clear:left;
+	float:left;
+}
 .jumbotron{
 	position:relative;
 }
@@ -75,6 +78,10 @@
 		}
 	.jumbotext{
 		width: 500px;
+	}
+	.entity-date{
+		float:right;
+		clear:none;
 	}
 	}
 
