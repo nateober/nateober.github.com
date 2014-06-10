@@ -58,6 +58,7 @@
 			</ul>
 		</div>
 	</div>
+	<div class="back-top">&#x25B2 back to top</div>
 	<div class="page-header" id="experience">
 		<h1>
 			Experience 
@@ -229,6 +230,7 @@
 			</ul>
 		</div>
 	</div>
+	<div class="back-top">&#x25B2 back to top</div>
 	<div class="page-header" id="education">
 		<h1>
 			Education 
@@ -270,6 +272,7 @@
 			</h3>
 		</div>
 	</div>
+	<div class="back-top">&#x25B2 back to top</div>
 	<div class="page-header">
 		<h1>
 			Additional Skills 
@@ -501,7 +504,7 @@
 		</div>
 	</div>
 </div>
-
+<div class="back-top">&#x25B2 back to top</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
 
@@ -516,6 +519,31 @@
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
+            
+            			
+			//back to top
+			$(document).ready(function(){
+				// hide #back-top first
+				$(".back-top").hide();				
+				// fade in #back-top
+				$(function () {
+					$(window).scroll(function () {
+						if ($(this).scrollTop() > 100) {
+							$('.back-top').fadeIn();
+						} else {
+							$('.back-top').fadeOut();
+						}
+					});			
+					// scroll body to 0px on click
+					$('.back-top').click(function () {
+						$('body,html').animate({
+							scrollTop: 0
+						}, 400);
+						return false;
+					});
+				});
+			});
+
 </script>
 </body>
 </html>

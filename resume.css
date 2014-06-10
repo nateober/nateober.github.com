@@ -71,6 +71,16 @@
 .follow-gp { background: url(img/google.png) no-repeat; }
 .follow-gh { background: url(img/github.png) no-repeat; }
 
+
+.back-top {
+	float: right;
+	cursor: pointer;
+	color: #182136;
+}
+.back-top:hover {
+	text-decoration: underline;
+}
+
 @media screen and (min-width: 992px)
 {
 	.me { display: block; }
