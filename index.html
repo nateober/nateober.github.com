@@ -550,12 +550,13 @@
 			$(function () {
 					$(window).scroll(function () {
 					if ($(this).scrollTop() > 250) {
-					$(".navbar-default").hide();
 						if ($(this).scrollTop() > 500) {
+							$(".navbar-default").hide();
 							$(".navbar-default").addClass("navbar-fixed-top");
 							$(".navbar-default").fadeIn();
 						} else {
 							$('.navbar-fixed-top').removeClass("navbar-fixed-top");
+							$(".navbar-default").show();
 						}
 						}
 					});
