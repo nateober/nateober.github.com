@@ -546,18 +546,17 @@
 
 			
 			$(document).ready(function(){
-			$('.back-top').removeClass("navbar-fixed-top");
+			var floatingMenu = $(".navbar").clone().appendTo("body");
+			var floatingSocial = $(".social").clone().prependTo(floatingMenu);
+			floatingMenu.hide();
 			$(function () {
 					$(window).scroll(function () {
-					if ($(this).scrollTop() > 250) {
 						if ($(this).scrollTop() > 500) {
-							$(".navbar-default").hide();
-							$(".navbar-default").addClass("navbar-fixed-top");
-							$(".navbar-default").fadeIn();
+							floatingMenu.addClass("navbar-fixed-top");
+							floatingMenu.fadeIn();
 						} else {
-							$('.navbar-fixed-top').removeClass("navbar-fixed-top");
-							$(".navbar-default").show();
-						}
+							floatingMenu.hide();
+							//$(".navbar-default").show();
 						}
 					});
 				});
