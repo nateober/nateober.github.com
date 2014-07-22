@@ -81,6 +81,15 @@
 	text-decoration: underline;
 }
 
+.navbar-fixed-top .social {
+	display:none;
+}
+
+@media screen and (min-width: 769px)
+{
+	.navbar-fixed-top .social {display:block;}
+}
+
 @media screen and (min-width: 992px)
 {
 	.me { display: block; }
