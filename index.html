@@ -47,7 +47,7 @@
 				My Name is Nate Ober and I am a tech-savvy, results-oriented, proven technical project manager, change agent, and customer advocate. Always working to improve communication, transparency and ultimately customer satisfaction, I offer a problem-solving first approach, while providing positive leadership and customer empowerment. I excel in an environment with diverse stakeholders, cutting-edge technology, and highly dynamic requirements. 
 			</p>
 		</div>
-		<div class="me">
+		<div class="me" title="Nate Ober">
 		</div>
 		<div class="social">
 			<ul>
@@ -58,7 +58,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="back-top">&#x25B2 back to top</div>
+	<!-- <div class="back-top">&#x25B2 back to top</div>-->
 	<div class="page-header" id="experience">
 		<h1>
 			Experience 
@@ -230,7 +230,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="back-top">&#x25B2 back to top</div>
+	<!-- <div class="back-top"> &#x25B2 back to top</div> -->
 	<div class="page-header" id="education">
 		<h1>
 			Education 
@@ -272,7 +272,7 @@
 			</h3>
 		</div>
 	</div>
-	<div class="back-top">&#x25B2 back to top</div>
+	<!--<div class="back-top">&#x25B2 back to top</div>-->
 	<div class="page-header">
 		<h1>
 			Additional Skills 
@@ -522,27 +522,47 @@
             
             			
 			//back to top
-			$(document).ready(function(){
+			//$(document).ready(function(){
 				// hide #back-top first
-				$(".back-top").hide();				
+			//	$(".back-top").hide();				
 				// fade in #back-top
-				$(function () {
-					$(window).scroll(function () {
-						if ($(this).scrollTop() > 100) {
-							$('.back-top').fadeIn();
-						} else {
-							$('.back-top').fadeOut();
-						}
-					});			
+			//	$(function () {
+			//		$(window).scroll(function () {
+			//			if ($(this).scrollTop() > 100) {
+			//				$('.back-top').fadeIn();
+			//			} else {
+			//				$('.back-top').fadeOut();
+			//			}
+			//		});			
 					// scroll body to 0px on click
-					$('.back-top').click(function () {
-						$('body,html').animate({
-							scrollTop: 0
-						}, 400);
-						return false;
+			//		$('.back-top').click(function () {
+			//			$('body,html').animate({
+			//				scrollTop: 0
+			//			}, 400);
+			//			return false;
+			//		});
+			//	});
+			//});
+
+			
+			$(document).ready(function(){
+			$('.back-top').removeClass("navbar-fixed-top");
+			$(function () {
+					$(window).scroll(function () {
+					if ($(this).scrollTop() > 250) {
+					$(".navbar-default").hide();
+						if ($(this).scrollTop() > 500) {
+							$(".navbar-default").addClass("navbar-fixed-top");
+							$(".navbar-default").fadeIn();
+						} else {
+							$('.navbar-fixed-top').removeClass("navbar-fixed-top");
+						}
+						}
 					});
 				});
 			});
+							
+			
 
 </script>
 </body>
