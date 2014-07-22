@@ -555,12 +555,13 @@
 							floatingMenu.addClass("navbar-fixed-top");
 							floatingMenu.fadeIn();
 						} else {
-							floatingMenu.hide();
+							floatingMenu.fadeOut(500);
 							//$(".navbar-default").show();
 						}
 					});
 				});
 			});
+			$('button.navbar-toggle.collapsed').click(function (e) {console.log("hide"); floatingSocial.hide()});
 							
 			
 
