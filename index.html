@@ -25,6 +25,14 @@
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#home">Nate Ober</a> 
+		<div class="social">
+			<ul>
+				<li class="follow follow-li" title="LinkedIn"><a href="http://linkedin.com/in/nateober"></a></li>
+				<li class="follow follow-tw" title="Twitter"><a href="http://twitter.com/nateober"></a></li>
+				<li class="follow follow-gp" title="Google Plus"><a href="http://gplus.to/nateober"></a></li>
+				<li class="follow follow-gh" title="GitHub"><a href="https://github.com/nateober"></a></li>
+			</ul>
+		</div>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
@@ -531,14 +539,15 @@
 			
 			$(document).ready(function(){
 			var floatingMenu = $(".navbar").clone().appendTo("body");
-			var floatingSocial = $(".social").clone().prependTo(floatingMenu);
 			floatingMenu.hide();
 			$(function () {
 					$(window).scroll(function () {
 						if ($(this).scrollTop() > 500) {
+							$(".navbar-header.social").css('display', 'block');
 							floatingMenu.addClass("navbar-fixed-top");
 							floatingMenu.fadeIn();
 						} else {
+						$(".navbar-header.social").css('display', 'none');
 							floatingMenu.fadeOut(500);
 							//$(".navbar-default").show();
 						}

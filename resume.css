@@ -23,8 +23,13 @@
 	float: left;
 }
 
+.navbar-header .social {
+	display:none;
+}
 
-
+.navbar-header .social ul{
+	margin-top:5px;
+}
 .jumbotron { position: relative; }
 
 .jumbotext
@@ -120,6 +125,12 @@
 	width: 33px;
 }
 
+.follow a {
+	display: block;
+	width:33px;
+	height:33px;
+}
+
 .follow-li { background: url(img/linkedin.png) no-repeat;}
 .follow-tw { background: url(img/twitter.png) no-repeat; }
 .follow-gp { background: url(img/google.png) no-repeat; }
@@ -153,7 +164,7 @@
 	.jumbotext { width: 500px; }
 	.phoneme { display:none; }
 	.social {display:block; }
-	
+
 	.entity-date
 	{
 		float: right;
@@ -164,7 +175,6 @@
 @media screen and (min-width: 1200px)
 {
 	.jumbotext { width: 700px; }
-	.social ul li { margin-top:10px;}
 }
 
 @media print
