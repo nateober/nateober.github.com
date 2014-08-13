@@ -1,3 +1,18 @@
+/*.circular {
+	margin: auto;
+	width: 130px;
+	height: 130px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url('homepage.jpg') no-repeat;
+	background-position:-50px -20px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}*/
+
+	
 .panel-default .panel-heading { background: white; }
 .panel-body { clear: both; }
 .entity-title { float: left; }
@@ -7,6 +22,8 @@
 	clear: left;
 	float: left;
 }
+
+
 
 .jumbotron { position: relative; }
 
@@ -26,20 +43,59 @@
 	border: 1px solid #999;
 	border-radius: 6px;
 	float: right;
+	box-shadow: 0 0 1px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 1px rgba(0, 0, 0, .8);
 	display: none;
+}
+
+.phoneme {
+	margin:auto;
+	width:280px;
+	height:160px;
+}
+	
+.square {
+	width: 230px;
+	height: 160px;
+	background: url('homepage.jpg') no-repeat;
+	background-position: 0px -20px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	float:left;
+	overflow: hidden;
+}
+
+.social-vert
+{
+	display:inline;
+	list-style-type: none;
+	height: 160px;
+	width: 50px;
+	float:right;
+	overflow: hidden;
+}
+
+.social-vert ul
+{
+	list-style-type: none;
+	float:right;
 }
 
 .social
 {
 	list-style-type: none;
-	padding: 10px;
+	margin: 10px 0px auto auto;
 	height: 50px;
-	width: 245px;
+	/*width: 245px;*/
 	float: right;
 	clear: both;
 	position: absolute;
 	bottom: 0px;
 	right: 18px;
+	display:none;
+	margin-right:35px;
 }
 
 .social ul
@@ -52,21 +108,19 @@
 
 .social ul li
 {
-	overflow: hidden;
-	display: inline;
 	float: right;
 }
 
-.social ul li a
-{
-	padding: 0;
-	margin: 0;
+
+.follow { 
+	margin-right: 5px;
+	margin-top:5px;
 	display: block;
-	height: 40px;
-	width: 40px;
+	height: 33px;
+	width: 33px;
 }
 
-.follow-li { background: url(img/linkedin.png) no-repeat; }
+.follow-li { background: url(img/linkedin.png) no-repeat;}
 .follow-tw { background: url(img/twitter.png) no-repeat; }
 .follow-gp { background: url(img/google.png) no-repeat; }
 .follow-gh { background: url(img/github.png) no-repeat; }
@@ -87,13 +141,18 @@
 
 @media screen and (min-width: 769px)
 {
+	.circular{display:none;}
+	.square{display: block;}
 	.navbar-fixed-top .social {display:block;}
 }
 
 @media screen and (min-width: 992px)
 {
 	.me { display: block; }
+	.square{display: none;}
 	.jumbotext { width: 500px; }
+	.phoneme { display:none; }
+	.social {display:block; }
 	
 	.entity-date
 	{
@@ -105,4 +164,13 @@
 @media screen and (min-width: 1200px)
 {
 	.jumbotext { width: 700px; }
+	.social ul li { margin-top:10px;}
+}
+
+@media print
+{
+	.social {display:none;}
+	.navbar {display:none;}
+	.navbar-fixed-top {display:none;}
+	.page-header {page-break-before: always;}
 }
