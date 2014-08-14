@@ -12,7 +12,7 @@
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }*/
 
-	
+
 .panel-default .panel-heading { background: white; }
 .panel-body { clear: both; }
 .entity-title { float: left; }
@@ -29,6 +29,7 @@
 
 .navbar-header .social ul{
 	margin-top:5px;
+		margin-left: 50px;
 }
 .jumbotron { position: relative; }
 
@@ -44,7 +45,7 @@
 	background: url('homepage.jpg') no-repeat;
 	width: 230px;
 	height: 370px;
-	background-position: 0 -20px;
+	background-position: 0px -20px;
 	border: 1px solid #999;
 	border-radius: 6px;
 	float: right;
@@ -56,15 +57,15 @@
 
 .phoneme {
 	margin:auto;
-	width:280px;
+	width:220px;
 	height:160px;
 }
-	
+
 .square {
-	width: 230px;
+	width: 160px;
 	height: 160px;
 	background: url('homepage.jpg') no-repeat;
-	background-position: 0px -20px;
+	background-position: -40px -20px;
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -117,7 +118,7 @@
 }
 
 
-.follow { 
+.follow {
 	margin-right: 5px;
 	margin-top:5px;
 	display: block;
@@ -136,7 +137,6 @@
 .follow-gp { background: url(img/google.png) no-repeat; }
 .follow-gh { background: url(img/github.png) no-repeat; }
 
-
 .back-top {
 	float: right;
 	cursor: pointer;
@@ -148,13 +148,24 @@
 
 .navbar-fixed-top .social {
 	display:none;
+	margin-right:80px;
 }
 
 @media screen and (min-width: 769px)
 {
 	.circular{display:none;}
-	.square{display: block;}
+	.square{
+		display: block;
+		width:220px;
+		background-position: -20px -20px;
+		}
+
 	.navbar-fixed-top .social {display:block;}
+	.phoneme {
+		margin:auto;
+		width:280px;
+		height:160px;
+	}
 }
 
 @media screen and (min-width: 992px)
@@ -180,6 +191,7 @@
 @media print
 {
 	.social {display:none;}
+	.social-vert{display:none;}
 	.navbar {display:none;}
 	.navbar-fixed-top {display:none;}
 	.page-header {page-break-before: always;}
