@@ -533,22 +533,13 @@
 			floatingMenu.addClass("noprint");
 			floatingMenu.hide();
 
-			//Why doesn't this work?
-			window.onbeforeprint = function() {
-				floatingMenu.hide();
-				};
-			window.onafterprint = function() {
-				floatingMenu.show();
-				};
-			//-----
-
 			$(function () {
 					$(window).scroll(function () {
 						if ($(this).scrollTop() > 500) {
-							$(".navbar-header.social").css('display', 'block');
+							$(".navbar-header.social").show();
 							floatingMenu.fadeIn();
 						} else {
-						$(".navbar-header.social").css('display', 'none');
+							$(".navbar-header.social").hide();
 							floatingMenu.fadeOut(500);
 							//$(".navbar-default").show();
 						}

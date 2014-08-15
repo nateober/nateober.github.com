@@ -234,7 +234,7 @@
 		width:48%;
 		float:right;
 	}
-	.noprint{display:none;}
+	.noprint{display:none !important;}
 	.entity-date
 	{
 		float: right;
