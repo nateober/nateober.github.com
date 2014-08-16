@@ -191,6 +191,13 @@
 
 }
 @media screen and (min-width: 769px){
+	.anchor{
+		display: block;
+		height: 25px; /*same height as header*/
+		margin-top: -25px; /*same height as header*/
+		visibility: hidden;
+	}
+
 	.tpm{
 		margin-top:-10px;
 		font-size:26px;
