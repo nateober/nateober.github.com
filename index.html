@@ -570,7 +570,7 @@
       }(document, 'script'));
 
 
-      if ($(window).width() < 500) {
+      if (!window.print) {
       	$("#printPage").text("Get PDF");
       	$("#printPage").attr('href', 'NateOber.pdf');
       }
