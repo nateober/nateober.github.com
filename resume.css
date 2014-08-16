@@ -213,13 +213,14 @@
 	.square{display: none;}
 	.jumbotext { width: 500px; }
 	.phoneme { display:none; }
-	.social {display:block; }
+	.social {display:block; bottom: 40px;}
 }
 
 
 @media screen and (min-width: 1200px)
 {
 	.jumbotext { width: 700px; }
+	.social {bottom: 0px;}
 }
 
 @media print
