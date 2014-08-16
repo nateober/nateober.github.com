@@ -570,7 +570,7 @@
       }(document, 'script'));
 
 
-      if (window.print) {
+      if (typeof(window.print) === 'function') {
       	return;
       }
 			else{
