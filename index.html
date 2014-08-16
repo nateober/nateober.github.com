@@ -570,13 +570,10 @@
       }(document, 'script'));
 
 
-      if (typeof(window.print) === 'function') {
-      	return;
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      	$("#printPage").text("Get PDF");
+      	$("#printPage").attr('href', 'NateOber.pdf');
       }
-			else{
-				$("#printPage").text("Get PDF");
-				$("#printPage").attr('href', 'NateOber.pdf');
-			}
 
       $(document).ready(function() {
       	var floatingMenu = $(".navbar").clone().appendTo("body");
