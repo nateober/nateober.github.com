@@ -531,17 +531,16 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
 
 
+			if($( window ).width() < 500){
+				$("#printPage").text("Get PDF");
+				$("#printPage").attr('href', 'NateOber.pdf');
+			}
 
 			$(document).ready(function(){
 			var floatingMenu = $(".navbar").clone().appendTo("body");
 			floatingMenu.addClass("navbar-fixed-top");
 			floatingMenu.addClass("noprint");
 			floatingMenu.hide();
-
-			if($( window ).width() < 500){
-				$("#printPage").text("Get PDF");
-				$("#printPage").attr('href', 'NateOber.pdf');
-			}
 
 			$(function () {
 					$(window).scroll(function () {
