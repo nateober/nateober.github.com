@@ -8,6 +8,13 @@
 .panel-body { clear: both; }
 .entity-title { float: left; }
 
+.anchor{
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
+
 .edgroup {
 	width:100%;
 	clear:both;
