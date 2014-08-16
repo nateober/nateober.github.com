@@ -570,10 +570,13 @@
       }(document, 'script'));
 
 
-      if (!window.print) {
-      	$("#printPage").text("Get PDF");
-      	$("#printPage").attr('href', 'NateOber.pdf');
+      if (window.print) {
+      	return;
       }
+			else{
+				$("#printPage").text("Get PDF");
+				$("#printPage").attr('href', 'NateOber.pdf');
+			}
 
       $(document).ready(function() {
       	var floatingMenu = $(".navbar").clone().appendTo("body");
