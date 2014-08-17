@@ -220,6 +220,9 @@
 		.phoneme {
 				display: none;
 		}
+		.navbar-header .social{
+			bottom: 0px;
+		}
 		.social {
 				display: block;
 				bottom: 40px;
