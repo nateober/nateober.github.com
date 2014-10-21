@@ -1,285 +1,62 @@
-.tpm {
-		margin-top: -10px;
-		font-size: 16px;
+body{
+	height:100vh;
+	width:100%;
+	background: url('forweb.jpeg') no-repeat center center fixed;
+  background-size: cover;
 }
-.hidesmall {
-		display: none;
+
+.jumbotext{
+	color:white;
+	float:right;
+	width:50%;
+	height:100vh;
+	position: relative;
 }
-.panel-default .panel-heading {
-		background: white;
+
+.jumbotext span {
+	padding:10px;
+	background: rgba(200,200,200,0.8);
+   position: absolute;
+   bottom: 100px;
+   right: 40px;
 }
-.panel-body {
-		clear: both;
+
+.sectexperience{
+	width:100%;
+	float:left;
+	background:white;
 }
-.entity-title {
-		float: left;
+
+.panel{
+	margin-left:40px;
+	margin-right:40px;
 }
-.anchor {
-		display: block;
-		height: 195px;
-		/*same height as header*/
-		margin-top: -195px;
-		/*same height as header*/
-		visibility: hidden;
+
+.page-header{
+	margin-left:40px;
+	margin-top:10px;
 }
-.edgroup {
-		width: 100%;
-		clear: both;
-		float: left;
-		margin-bottom:10px;
+
+.secteducation{
+	width:100%;
+	float:left;
+	background:white;
 }
-.entity-date {
-		clear: left;
-		float: left;
-		margin-top: -5px;
-		padding-top: 0px;
+.sectskills{
+	width:100%;
+	float:left;
+	background:white;
 }
-.alert .entity-date {
-		margin-top: 0px;
-		padding-top: 0px;
+
+.alert{
+	margin-left:40px;
+	margin-right:40px;
 }
-.navbar-header .social {
-		display: none;
-}
-.navbar-header .social ul {
-		margin-top: 5px;
-		margin-left: 50px;
-}
-.jumbotron {
-		position: relative;
-}
-.jumbotext {
-		float: left;
-		display: inline;
-		width: auto;
-}
-.me {
-		background: url('homepage.jpg') no-repeat;
-		width: 230px;
-		height: 370px;
-		background-position: -20px -20px;
-		border: 1px solid #999;
-		border-radius: 6px;
-		float: right;
-		box-shadow: 0 0 1px rgba(0, 0, 0, .8);
-		-webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .8);
-		-moz-box-shadow: 0 0 1px rgba(0, 0, 0, .8);
-		display: none;
-}
-.phoneme {
-		margin: auto;
-		width: 220px;
-		height: 160px;
-}
-.square {
-		width: 160px;
-		height: 160px;
-		background: url('homepage.jpg') no-repeat;
-		background-position: -50px -50px;
-		box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-		-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-		-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-		float: left;
-		overflow: hidden;
-}
-.social-vert {
-		display: inline;
-		list-style-type: none;
-		height: 160px;
-		width: 50px;
-		float: right;
-		overflow: hidden;
-}
-.social-vert ul {
-		list-style-type: none;
-		float: right;
-}
-.social {
-		list-style-type: none;
-		margin: 10px 0px auto auto;
-		height: 50px;
-		/*width: 245px;*/
-		float: right;
-		clear: both;
-		position: absolute;
-		bottom: 0px;
-		right: 18px;
-		display: none;
-		margin-right: 35px;
-}
-.social ul {
-		float: left;
-		list-style-type: none;
-		display: inline;
-		margin: 0;
-}
-.social ul li {
-		float: left;
-}
-.follow {
-		margin-right: 5px;
-		margin-top: 5px;
-		display: block;
-		height: 33px;
-		width: 33px;
-}
-.follow a {
-		display: block;
-		width: 33px;
-		height: 33px;
-}
-.follow-li {
-		background: url(img/linkedin.png) no-repeat;
-}
-.follow-tw {
-		background: url(img/twitter.png) no-repeat;
-}
-.follow-gp {
-		background: url(img/google.png) no-repeat;
-}
-.follow-gh {
-		background: url(img/github.png) no-repeat;
-}
-.back-top {
-		float: right;
-		cursor: pointer;
-		color: #182136;
-}
-.back-top:hover {
-		text-decoration: underline;
-}
-.navbar-fixed-top .social {
-		display: none;
-		margin-right: 70px;
-}
-.responsibilities {
-		width: 100%;
-}
-.contributions {
-		width: 100%;
-}
-@media screen and (min-width: 500px) {
-		.entity-date {
-				float: right;
-				clear: none;
-				margin-top: 0px;
-				padding-top: 0px;
-		}
-		.phoneme {
-				margin: auto;
-				width: 280px;
-				height: 160px;
-		}
-		.square {
-				display: block;
-				width: 230px;
-				background-position: -20px -50px;
-		}
-}
-@media screen and (min-width: 769px) {
-		.anchor {
-				display: block;
-				height: 25px;
-				/*same height as header*/
-				margin-top: -25px;
-				/*same height as header*/
-				visibility: hidden;
-		}
-		.tpm {
-				margin-top: -10px;
-				font-size: 26px;
-		}
-		.hidesmall {
-				display: inline;
-		}
-		.hidebig {
-				display: none;
-		}
-		.navbar-fixed-top .social {
-				display: block;
-		}
-		.responsibilities {
-				width: 48%;
-				float: left;
-		}
-		.contributions {
-				width: 48%;
-				float: right;
-		}
-}
-@media screen and (min-width: 992px) {
-		.me {
-				display: block;
-		}
-		.square {
-				display: none;
-		}
-		.jumbotext {
-				width: 500px;
-		}
-		.phoneme {
-				display: none;
-		}
-		.navbar-header .social{
-			bottom: 0px;
-		}
-		.social {
-				display: block;
-				bottom: 40px;
-		}
-}
-@media screen and (min-width: 1200px) {
-		.jumbotext {
-				width: 700px;
-		}
-		.social {
-				bottom: 0px;
-		}
-}
-@media print {
-		.social {
-				display: none;
-		}
-		.social-vert {
-				display: none;
-		}
-		.navbar {
-				display: none;
-		}
-		.navbar-header {
-				display: none;
-		}
-		.navbar-fixed-top {
-				display: none;
-		}
-		.pagebreak {
-				page-break-before: always;
-		}
-		.responsibilities {
-				width: 48%;
-				float: left;
-		}
-		.page-header {
-				margin: 10px 0 20px !important;
-		}
-		h1 {
-				margin: 5px !important;
-				font-size: 26px;
-				padding: 0px;
-		}
-		h6 {
-				margin-top: -5px;
-				display: none;
-		}
-		.contributions {
-				width: 48%;
-				float: right;
-		}
-		.noprint {
-				display: none !important;
-		}
-		.entity-date {
-				float: right;
-				clear: none;
-		}
+
+.site-footer{
+	position:fixed;
+	width:100%;
+	height:30px;
+	bottom:0px;
+	background:white;
 }
