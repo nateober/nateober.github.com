@@ -128,18 +128,18 @@
 		width: 33px;
 		height: 33px;
 }
-.follow-li {
-		background: url(img/linkedin.png) no-repeat;
-}
-.follow-tw {
-		background: url(img/twitter.png) no-repeat;
-}
-.follow-gp {
-		background: url(img/google.png) no-repeat;
-}
-.follow-gh {
-		background: url(img/github.png) no-repeat;
-}
+
+.sprites { background: url('img/sprites.png') no-repeat; background-size: 34px; transition-duration: 250ms; border-radius: 5px;}
+.tem { width: 33px; height: 33px; background-position: 0px 0px; background-color: #AAA;}
+.tem:hover { width: 33px; height: 33px; background-position: 0px 0; background-color: #FFCC33;}
+.tgh { width: 33px; height: 33px; background-position: 0px 25%; background-color: #AAA;}
+.tgh:hover { width: 33px; height: 33px; background-position: 0px 25%; background-color: #000000;}
+.tgp { width: 33px; height: 33px; background-position: 0px 50%; background-color: #AAA;}
+.tgp:hover { width: 33px; height: 33px; background-position: 0px 50%; background-color: #CC3333;}
+.tin { width: 33px; height: 33px; background-position: 0px 75%; background-color: #AAA;}
+.tin:hover { width: 33px; height: 33px; background-position: 0px 75%; background-color: #0033CC;}
+.ttw { width: 33px; height: 33px; background-position: 0px 100%; background-color: #AAA;}
+.ttw:hover { width: 33px; height: 33px; background-position: 0px 100%; background-color: #3399FF;}
 .back-top {
 		float: right;
 		cursor: pointer;
@@ -224,9 +224,12 @@
 			bottom: 0px;
 		}
 		.social {
-				display: block;
+				display: none;
 				bottom: 40px;
 		}
+		.navbar-header .social {
+		display: block;
+	}
 }
 @media screen and (min-width: 1200px) {
 		.jumbotext {
