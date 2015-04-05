@@ -1,3 +1,15 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.experience{
+	color: #669966;
+}
+
+.education{
+	color: #6699CC;
+}
+
 .tpm {
 		margin-top: -10px;
 		font-size: 16px;
