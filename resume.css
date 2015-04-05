@@ -159,12 +159,6 @@
 		width: 100%;
 }
 @media screen and (min-width: 500px) {
-		.entity-date {
-				float: right;
-				clear: none;
-				margin-top: 0px;
-				padding-top: 0px;
-		}
 		.phoneme {
 				margin: auto;
 				width: 280px;
@@ -177,6 +171,12 @@
 		}
 }
 @media screen and (min-width: 769px) {
+		.entity-date {
+				float: right;
+				clear: none;
+				margin-top: 0px;
+				padding-top: 0px;
+		}
 		.anchor {
 				display: block;
 				height: 25px;
