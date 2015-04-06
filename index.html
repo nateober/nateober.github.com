@@ -29,7 +29,7 @@
         <div class="container">
           <div class="navbar-header" id="home">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span>  <span class="icon-bar"></span>  <span class="icon-bar"></span>  <span class="icon-bar"></span>
-            </button><a class="navbar-brand" href="#home">NateOber</a>
+            </button><a class="navbar-brand" href="#home">Nate Ober</a>
             <div class="social">
               <ul>
                 <li class="follow sprites tin" title="LinkedIn">
@@ -43,6 +43,9 @@
                 </li>
                 <li class="follow sprites tgh" title="GitHub">
                   <a href="https://github.com/nateober"></a>
+                </li>
+                <li class="follow sprites tem" title="Email">
+                  <a href="mailto:nate[at]nateober[dot]com"></a>
                 </li>
               </ul>
             </div>
@@ -321,10 +324,10 @@
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title skills">
+            <h4 class="panel-title">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> Project Management Software </a>
 				</h4>
-            <p class="list-group-item-text skills">
+            <p class="list-group-item-text">
               MS Project, Version One, FogBugz, Accompa, Pivotal Tracker
             </p>
           </div>
@@ -378,10 +381,10 @@
         </div>
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title skills">
+            <h4 class="panel-title">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Computer Programming Languages </a>
 				</h4>
-            <p class="list-group-item-text skills">
+            <p class="list-group-item-text">
               JavaScript, C#, Bash, PHP, Perl, VB.net
             </p>
           </div>
@@ -445,10 +448,10 @@
         </div>
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h4 class="panel-title skills">
+            <h4 class="panel-title">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Databases </a>
 				</h4>
-            <p class="list-group-item-text skills">
+            <p class="list-group-item-text">
               MS SQL, PostgreSQL, MySQL, Sybase
             </p>
           </div>
@@ -495,10 +498,10 @@
         </div>
         <div class="panel panel-default noprint">
           <div class="panel-heading">
-            <h4 class="panel-title skills">
+            <h4 class="panel-title">
 					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"> Operating Systems </a>
 				</h4>
-            <p class="list-group-item-text skills">
+            <p class="list-group-item-text">
               Microsoft Windows, Linux, OS X
             </p>
           </div>
@@ -539,10 +542,10 @@
         </div>
         <div class="panel panel-default noprint">
           <div class="panel-heading">
-            <h4 class="panel-title skills">
+            <h4 class="panel-title">
 					<a data-toggle="collapse" data-parent="#accordion" style="text-decoration: none;"> Office Software </a>
 				</h4>
-            <p class="list-group-item-text skills">
+            <p class="list-group-item-text">
               Microsoft Excel, Word, PowerPoint (as well as Google and Open Office equivalents)
             </p>
           </div>
@@ -578,6 +581,8 @@
       }
 
       $(document).ready(function() {
+      	$('.follow.sprites.tem a').attr('href', $('.follow.sprites.tem a').attr('href').replace('[at]','@').replace('[dot]','.'));
+      	
       	var floatingMenu = $(".navbar").clone().appendTo("body");
       	floatingMenu.addClass("navbar-fixed-top");
       	floatingMenu.addClass("noprint");
