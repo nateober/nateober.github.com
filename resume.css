@@ -70,7 +70,7 @@ body {
 		width: auto;
 }
 .me {
-		background: url('homepage.jpg') no-repeat;
+		background: url('homepage_lite.jpg') no-repeat;
 		width: 230px;
 		height: 370px;
 		background-position: -20px -20px;
@@ -90,7 +90,7 @@ body {
 .square {
 		width: 160px;
 		height: 160px;
-		background: url('homepage.jpg') no-repeat;
+		background: url('homepage_lite.jpg') no-repeat;
 		background-position: -50px -50px;
 		box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 		-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);

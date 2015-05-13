@@ -586,7 +586,8 @@
 
       $(document).ready(function() {
       	$('.follow.sprites.tem a').attr('href', $('.follow.sprites.tem a').attr('href').replace('[at]','@').replace('[dot]','.'));
-      	
+      	$('.square').css('background-image', 'url("homepage.jpg")');
+      	$('.me').css('background-image', 'url("homepage.jpg")');
       	var floatingMenu = $(".navbar").clone().appendTo("body");
       	floatingMenu.addClass("navbar-fixed-top");
       	floatingMenu.addClass("noprint");
