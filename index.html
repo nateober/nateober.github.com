@@ -586,8 +586,19 @@
 
       $(document).ready(function() {
       	$('.follow.sprites.tem a').attr('href', $('.follow.sprites.tem a').attr('href').replace('[at]','@').replace('[dot]','.'));
-      	$('.square').css('background-image', 'url("homepage.jpg")');
-      	$('.me').css('background-image', 'url("homepage.jpg")');
+      	
+      	function loadSprite(src, callback) {
+    		var sprite = new Image();
+    		sprite.onload = callback;
+    		sprite.src = src;
+		}
+		
+		loadSprite('homepage.jpg', function() {
+    		$('.square').css('background-image', 'url("homepage.jpg")');
+      		$('.me').css('background-image', 'url("homepage.jpg")');
+		});
+      	
+      	
       	var floatingMenu = $(".navbar").clone().appendTo("body");
       	floatingMenu.addClass("navbar-fixed-top");
       	floatingMenu.addClass("noprint");
